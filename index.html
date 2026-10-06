@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#06070c" />
+  <title>个人主页</title>
+  <meta name="description" content="个人主页 —— 关于我、项目与联系方式" />
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- 顶部滚动进度条 -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- 背景装饰层 -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="bg-vignette"></div>
+  </div>
+
+  <!-- ========== 导航 ========== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" id="brandMark">1</span>
+        <span class="brand-name" id="brandName">HOME</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="站点导航"></nav>
+
+      <a class="btn btn-ghost nav-cta" id="navCta" href="#" target="_blank" rel="noopener">
+        <span class="icon-slot" data-icon="github"></span>
+        <span class="btn-label">GitHub</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ========== 首屏 ========== -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal" id="heroEyebrow">HELLO</p>
+
+          <h1 class="hero-title reveal">
+            <span class="hero-name" id="heroName">你的名字</span>
+          </h1>
+
+          <p class="hero-tagline reveal">
+            <span class="prompt">&gt;</span>
+            <span id="heroTagline"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-desc reveal" id="heroDesc"></p>
+
+          <div class="hero-actions reveal" id="heroActions"></div>
+
+          <ul class="hero-meta reveal" id="heroMeta"></ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-glow" aria-hidden="true"></div>
+          <div class="avatar-wrap">
+            <div class="avatar-ring" aria-hidden="true"></div>
+            <div class="avatar" id="avatar"></div>
+          </div>
+          <div class="orbit" aria-hidden="true">
+            <span class="orbit-dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="向下滚动">
+        <span class="scroll-hint-track"><span class="scroll-hint-thumb"></span></span>
+        <span class="scroll-hint-text">SCROLL</span>
+      </a>
+    </section>
+
+    <!-- ========== 关于我 ========== -->
+    <section class="section" id="about">
+      <header class="section-head reveal">
+        <span class="section-index">01</span>
+        <h2 class="section-title">关于我</h2>
+        <p class="section-sub" id="aboutSub"></p>
+      </header>
+
+      <div class="about-grid">
+        <article class="card about-card reveal" id="aboutText"></article>
+
+        <article class="card skills-card reveal">
+          <h3 class="card-title"><span class="dot"></span>技能栈</h3>
+          <div class="chips" id="skillChips"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== 项目 ========== -->
+    <section class="section" id="projects">
+      <header class="section-head reveal">
+        <span class="section-index">02</span>
+        <h2 class="section-title">项目</h2>
+        <p class="section-sub" id="projectsSub"></p>
+      </header>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <!-- ========== 联系 ========== -->
+    <section class="section" id="contact">
+      <header class="section-head reveal">
+        <span class="section-index">03</span>
+        <h2 class="section-title">联系我</h2>
+        <p class="section-sub" id="contactSub"></p>
+      </header>
+
+      <article class="card contact-card reveal">
+        <div class="contact-links" id="contactLinks"></div>
+        <div class="contact-actions" id="contactActions"></div>
+      </article>
+    </section>
+  </main>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-main" id="footerText"></p>
+      <p class="footer-fine" id="footerFine"></p>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript">本页需要启用 JavaScript 才能显示完整内容。</div>
+  </noscript>
+
+  <!-- 内容配置（你只改这个文件）→ 渲染逻辑 -->
+  <script src="./assets/js/content.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

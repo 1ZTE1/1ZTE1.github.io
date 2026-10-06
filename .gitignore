@@ -1,0 +1,18 @@
+# 这是纯静态站点，没有依赖需要忽略。
+# 只排除编辑器/系统产生的杂物。
+
+# 系统
+.DS_Store
+Thumbs.db
+Desktop.ini
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# AI 助手本地数据
+.workbuddy/
+.claude/
+.agents/
