@@ -82,23 +82,16 @@ const SITE = {
 
   projects: [
     {
-      title: "项目一",
-      desc: "这个项目做了什么，解决了什么问题。一句话说清最有意思的地方。",
-      tags: ["Python", "Flask"],
+      title: "丛林飞鼠的智慧新家",
+      desc: "让丛林飞鼠冬暖夏凉。",
+      tags: [],
       url: "",
       repo: ""
     },
     {
-      title: "项目二",
-      desc: "第二个项目的简单说明，可以写用了什么硬件、什么传感器。",
-      tags: ["嵌入式", "MQTT"],
-      url: "",
-      repo: ""
-    },
-    {
-      title: "项目三",
-      desc: "第三个项目的说明。项目数量随意，两个也行，六个也行。",
-      tags: ["Web", "JavaScript"],
+      title: "仓鼠的智慧新家",
+      desc: "让仓鼠冬暖夏凉，不过新加了一个发电跑轮，让仓鼠当“黑奴”。",
+      tags: [],
       url: "",
       repo: ""
     }
