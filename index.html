@@ -138,6 +138,21 @@
     <div class="noscript">本页需要启用 JavaScript 才能显示完整内容。</div>
   </noscript>
 
+  <!-- ========== 项目详情（二级页面）========== -->
+  <div class="detail-layer" id="detailLayer" hidden>
+    <div class="detail-backdrop" id="detailBackdrop"></div>
+    <div class="detail-panel" id="detailPanel" role="dialog" aria-modal="true"
+         aria-labelledby="detailTitle">
+      <button class="detail-close" id="detailClose" type="button" aria-label="返回项目列表">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="detail-scroll" id="detailScroll"></div>
+    </div>
+  </div>
+
   <!-- 内容配置（你只改这个文件）→ 渲染逻辑 -->
   <script src="./assets/js/content.js"></script>
   <script src="./assets/js/main.js"></script>
