@@ -111,14 +111,14 @@ const SITE = {
 
   // icon 可选：mail / github / bilibili / twitter / wechat / qq / link
   contact: [
-    { icon: "mail",     label: "邮箱",    value: "你的邮箱@example.com", url: "mailto:你的邮箱@example.com" },
+    { icon: "mail",     label: "邮箱",    value: "17833655034@163.com", url: "mailto:17833655034@163.com" },
     { icon: "github",   label: "GitHub",  value: "github.com/1ZTE1",    url: "https://github.com/1ZTE1" },
     { icon: "bilibili", label: "哔哩哔哩", value: "你的昵称",             url: "https://space.bilibili.com/" }
   ],
 
   // 联系区的大按钮（不需要就写成 []）
   contactActions: [
-    { label: "发邮件给我", url: "mailto:你的邮箱@example.com", style: "primary" }
+    { label: "发邮件给我", url: "mailto:17833655034@163.com", style: "primary" }
   ],
 
   /* ------------------------------------------------------------------
