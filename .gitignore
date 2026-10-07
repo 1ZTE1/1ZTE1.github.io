@@ -16,3 +16,12 @@ desktop.ini
 .workbuddy/
 .claude/
 .agents/
+
+# 安装包等原始二进制文件绝不入库（需要入库的一律先加密成 .enc）
+*.msi
+*.exe
+*.dmg
+
+# 临时密码文件
+*.pw
+.pw_*
